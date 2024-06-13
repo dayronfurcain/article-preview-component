@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Manrope';
+    font-display: swap;
+    src: url('/Manrope-VariableFont_wght.ttf') ;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+  .list-of-icons::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      translate: -50% 0%;
+      border-width: 10px;
+      border-color: hsl(218.82deg, 18.89%, 35.29%) transparent transparent;
+    }
+}
+
